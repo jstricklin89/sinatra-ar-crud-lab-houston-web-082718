@@ -51,22 +51,22 @@ describe "Blog Post App" do
       end
     end
 
-    describe 'show action' do
-      it 'show page responds with a 200 status code' do
-        get "/posts/#{@post1.id}"
-        expect(last_response.status).to eq(200)
-      end
+    # describe 'show action' do
+    #   it 'show page responds with a 200 status code' do
+    #     get "/posts/#{@post1.id}"
+    #     expect(last_response.status).to eq(200)
+    #   end
 
-      it "show page displays the post's name" do
-        get "/posts/#{@post1.id}"
-        expect(last_response.body).to include(post_name)
-      end
+    #   it "show page displays the post's name" do
+    #     get "/posts/#{@post1.id}"
+    #     expect(last_response.body).to include(post_name)
+    #   end
 
-      it "show page displays the post's content" do
-        get "/posts/#{@post1.id}"
-        expect(last_response.body).to include(post_content)
-      end
-    end
+    #   it "show page displays the post's content" do
+    #     get "/posts/#{@post1.id}"
+    #     expect(last_response.body).to include(post_content)
+    #   end
+    # end
 
 
   end
